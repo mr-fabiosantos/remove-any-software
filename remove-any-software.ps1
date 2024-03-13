@@ -1,4 +1,10 @@
-﻿# Define os diretórios onde os programas podem ser encontrados
+﻿# Objective: Uninstall Any Software
+# Author: Fábio Santos
+# Date: 13/03/2024 
+
+
+
+# Define os diretórios onde os programas podem ser encontrados
 $programFilesDirs = @("C:\Program Files", "C:\Program Files (x86)", "C:\")
 
 # Define a lista de softwares a serem removidos, cada entrada contém o nome do programa e os nomes dos executáveis de desinstalação
@@ -44,7 +50,7 @@ $programsToUninstall = @(
         SilentArgs = @("/VERYSILENT", "/SILENT", "/SUPPRESSMSGBOXES")
     },
     @{
-        Name = "LDPlayer"
+        Name = "LDPlayer" # Obs.: No momento, não encontrei um parâmetro silent para esse software
         UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
         SilentArgs = @("/VERYSILENT", "/SILENT", "/SUPPRESSMSGBOXES")
     }
