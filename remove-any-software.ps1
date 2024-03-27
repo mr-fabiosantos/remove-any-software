@@ -11,48 +11,48 @@ $programFilesDirs = @("C:\Program Files", "C:\Program Files (x86)", "C:\")
 $programsToUninstall = @(
     @{
         Name = "Driver Booster"
-        UninstallExeNames = @("uninstall.exe", "unins000.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/VERYSILENT", "/SILENT", "/QUIET", "/SUPPRESSMSGBOXES")
+        UninstallExeNames = @("unins000.exe")
+        SilentArgs = @("/VERYSILENT")
     },
     @{
         Name = "Driver Easy"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/VERYSILENT", "/SILENT", "/SUPPRESSMSGBOXES")
-    },
-    @{
-        Name = "7-zip"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/S")
+        UninstallExeNames = @("unins000.exe")
+        SilentArgs = @("/VERYSILENT")
     },
     @{
         Name = "WinRAR"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/S", "/Q", "/SILENT", "/Q /S")
+        UninstallExeNames = @("uninstall.exe")
+        SilentArgs = @("/S")
     },
     @{
         Name = "Steam"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/S", "/Q", "/SILENT", "/Q /S")
+        UninstallExeNames = @("uninstall.exe")
+        SilentArgs = @("/S")
     },
     @{
         Name = "CCleaner"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/S", "/Q", "/SILENT", "/Q /S")
+        UninstallExeNames = @("uninst.exe")
+        SilentArgs = @("/S")
     },
     @{
         Name = "Defraggler"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/S", "/Q", "/SILENT", "/Q /S")
+        UninstallExeNames = @("uninst.exe")
+        SilentArgs = @("/S")
     },
     @{
         Name = "EditPad Pro 8"
-        UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
-        SilentArgs = @("/VERYSILENT", "/SILENT", "/SUPPRESSMSGBOXES")
+        UninstallExeNames = @("UnDeploy64.exe")
+        SilentArgs = @("/SILENT")
     },
     @{
         Name = "LDPlayer" # Obs.: No momento, não encontrei um parâmetro silent para esse software
         UninstallExeNames = @("uninstall.exe", "uninst.exe", "UnDeploy64.exe", "dnuninst.exe")
         SilentArgs = @("/VERYSILENT", "/SILENT", "/SUPPRESSMSGBOXES")
+    },
+    @{
+        Name = "010 Editor"
+        UninstallExeNames = @("unins000.exe")
+        SilentArgs = @("/silent")
     }
     # Adicione mais programas conforme necessário
 )
